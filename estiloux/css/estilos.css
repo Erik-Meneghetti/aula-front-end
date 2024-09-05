@@ -8,17 +8,27 @@
  body {
     background-color: #EFEFEF;
  }
+   header, footer{
+   width: 100%;
+   height: 10%;
+   background-color: #727272;
+}
 
+html, body{
 
+   height: 100%;
+   
+}
 
 
  body{
-    background-color: rgb(253, 252, 252);
+    background-color: #EFEFEF;
+    
  }
 
- header {
+ /* header {
     background-color: #727272
- }
+ } */
 
  .Layout-grid {
     width: 100%;
@@ -28,15 +38,11 @@
     
    }
 
- 
    .header-flex{
-
       display: flex;
       justify-content: space-between;
       align-items: center;
    }
-
-
 
    h1 {
        font-family: 'times new roman' Verdana,  sans-serif;
@@ -44,7 +50,6 @@
        font-weight: 300;
        color: white;
    }
-
 
    .ux{
       font-size: 30px;
@@ -54,22 +59,18 @@
       font-family: monospace;
    }
 
-
-
 nav{
    display: flex; 
    justify-content: space-between;
    align-items: center;
    width: 400px;
     height: 100%;
-    
 }
 
   nav a{ 
    display: flex;
    justify-content: center;
-   align-items: center;
-    
+   align-items: center; 
    width: 100px;
    height: 80px;
    color:#E8E8E8;
@@ -78,42 +79,113 @@ nav{
    transition: background-color 0.4s, margin-left 0.8s, margin-botto 0.8s;
    }
 
-
    nav a:hover{
-      
-      
-      
+      color: black;
+      text-decoration: underline;
+      font-style: italic;
       margin-left: 10px;
       margin-bottom: 10px;
       background-color:rgba(232, 232, 232, 0.5)
    }
 
-
    main{
       width: 100%;
-      height: 800px;
-      border: 3px solid red;
+      height: 80%;
+      padding-top: 20px;
+      padding-bottom: 20px;
    }
-
 
    .main-flex{
       width: 100%;
-      height: 600px;
-      
+      height: 100%;
       display: flex;
       justify-content: space-between;
-      content i
-      border: 2px solid green;
+      border: 2px solid rgba(232, 232, 232, 0.5);
+      background-color: rgba(232, 232, 232, 0.5);
    }
 
    .harmonia{
-      border: 2px solid blue;
-      margin: 10px;
-      width: ;
+      border: 2px ;
+      width: 615px;
+      height: 100%;
+      background-color: white;
+   }
+
+.lapis-imagem{
+   width: 100%;
+ }
    
+   .harmonia h2{
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 25px;
+      margin-right: 20px;
+      margin-left: 20px;
+      color: #a8a8a8;
+   }
+
+   .harmonia p{
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #a8a8a8;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+   }
+   
+   aside{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+
+      background-color: #EDEDED;
+      width: 250px;
+      height: 100%;   
+   }
+
+   aside article{
+      background-color: white;
+      
+   }
+   aside .buscar-box{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   }
+
+   aside article h3{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 100%;
+      color: #a8a8a8;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid black;
+   }
+
+   aside article input,
+   aside article button {
+      height: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+
+   aside article input{
+      border: 1px solid #a8a8a8;
+      outline: none;
+      padding-right: 5px;
+      padding-left: 5px;
    }
 
 
-   aside{
-      border: 2px solid purple;
+   aside article button {
+      width: 30px;
+      background-color: #727272;
+      color: white;
+      border: none;
+      border: 1px solid #727272;
+      cursor: pointer;
    }
